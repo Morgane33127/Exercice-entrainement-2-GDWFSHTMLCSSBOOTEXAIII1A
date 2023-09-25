@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'HammersmithOne-Regular';
+  src: url('HammersmithOne-Regular.ttf') format('truetype');
+}
+
+$font-color : #FFFDF7;
+$yellow : #FFCC29;
+$grey : #424137;
+
+#body {
+background-color: $font-color;
+font-family: 'HammersmithOne-Regular';
+}
+
+nav {
+background-color: $grey ;
+color: white;
+}
+
+#logo {
+border-radius: 100%;
+border: solid;
+border-color: $grey;
+}
+
+#footer{
+background-color: $yellow;
+padding-bottom: 1%;
+}
+
+label {
+padding-top: 1%;
+}
+
+.card-style {
+border: none;
+width: 18rem;
+box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.menu {
+color:white !important;
+}
+
+.custom-toggler.navbar-toggler {
+border-color: white;
+}
