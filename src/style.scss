@@ -1,3 +1,4 @@
+/* Police */
 @font-face {
   font-family: 'HammersmithOne-Regular';
   src: url('HammersmithOne-Regular.ttf') format('truetype');
@@ -7,35 +8,49 @@ $font-color : #FFFDF7;
 $yellow : #FFCC29;
 $grey : #424137;
 
+/* Réinitialisation du navigateur */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ID */
+
 #body {
 background-color: $font-color;
 font-family: 'HammersmithOne-Regular';
 }
 
-nav {
+#footer{
+  background-color: $yellow;
+  padding-bottom: 1%;
+}
+
+/* Classes*/
+.navigation {
 background-color: $grey ;
 color: white;
 }
 
-#logo {
+
+.label {
+  padding-top: 1%;
+}
+
+.logo-style {
 border-radius: 100%;
 border: solid;
 border-color: $grey;
 }
 
-#footer{
-background-color: $yellow;
-padding-bottom: 1%;
-}
-
-label {
-padding-top: 1%;
-}
-
 .card-style {
 border: none;
-width: 18rem;
 box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card-event-style {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .menu {
