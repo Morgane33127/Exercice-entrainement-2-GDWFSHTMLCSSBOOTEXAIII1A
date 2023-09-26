@@ -1,51 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="La ruche association de protection des abeilles">
-    <meta name="keywords" content="Ruche, association, abeilles">
-    <meta name="author" content="MG">
-    <meta name="viewport" content="width=device-width, , initial-scale=1.0">
-    <title>La ruche</title>
-    <link href="src/style.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-<body id="body">
-  <!-- Barre de nav-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid navigation">
-        <a class="navbar-brand" href="#">
-            <img src="src/img/laruche-logo.png" class="logo-style" alt="La ruche association logo" width="100">
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          </a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link menu active" aria-current="page" href="index.html">ACCUEIL</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link menu" href="about.html">A PROPOS DE NOUS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link menu" href="events.html">EVENEMENTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link menu" href="#">LE SAVIEZ-VOUS ?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link menu" href="don.html">FAIRE UN DON</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link menu" href="contact.html">NOUS CONTACTER</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <header class="container-md">
+<?php
+require 'header.php';
+require 'navigation.php';
+?>
+<header class="container-md">
 <!-- Carousel-->
 <div id="carouselExampleCaptions" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
   <div class="carousel-indicators">
@@ -95,7 +52,7 @@
   <div class="container-md">
       <div class="row justify-content-md-center">
           <div class="card card-style p-2 ms-4" style="width: 18rem; border:none;">
-              <img src="src/img/parrainerruche.png" class="card-img-top" alt="parrainer une ruche">
+              <img src="src/img/parrainerruche.png" class="card-img-top card-mobile" alt="parrainer une ruche">
               <div class="card-body">
                   <h5 class="card-title">Parainer une ruche</h5>
                   <p class="card-text">Sélectionnez la ruche que vous souhaitez parrainer et recevez des photos + quelques pots de miel en récompense. </p>
@@ -103,14 +60,14 @@
               </div>
           </div>
           <div class="card card-style p-2 ms-4" style="width: 18rem; border:none;">
-              <img src="src/img/offrirunefleur.png" class="card-img-top" alt="Offrir une fleur">
+              <img src="src/img/offrirunefleur.png" class="card-img-top card-mobile" alt="Offrir une fleur">
               <div class="card-body">
                   <h5 class="card-title">Offrir une fleur</h5>
                   <p class="card-text">Aidez-nous en finançant des mètres carrés de fleurs, indispensable à nos petites butineuses.</p> <a href="#" class="btn btn-success">En savoir+</a>
               </div>
           </div>
           <div class="card card-style p-2 ms-4" style="width: 18rem; border:none;">
-              <img src="src/img/faireundon.png" class="card-img-top" alt="faire un don">
+              <img src="src/img/faireundon.png" class="card-img-top card-mobile" alt="faire un don">
               <div class="card-body">
                   <h5 class="card-title">Faire un don</h5>
                   <p class="card-text">Contribuer à la sauvegarde des abeilles en nous rejoignant ou en faisant au don.</p>
@@ -141,25 +98,6 @@
   </div>
 </div>
 </section>
-
-<footer id="footer">
-  <h2 class="text-center pt-3">Contactez-nous</h2>
-<div class="container-md">
-  <form method="POST" action="#">
-      <label class="form-label" for="name">Nom</label>
-      <input class="form-control" id="name" type="text" name="name" required>
-      <label class="form-label" for="prenom">Prénom</label>
-      <input class="form-control" id="prenom" type="text" name="prenom" required>
-      <label class="form-label" for="mail">E-mail</label>
-      <input class="form-control" id="mail" type="email" name="mail" required>
-      <label for="validationTextarea" class="form-label">Commentaire : </label>
-      <textarea class="form-control" id="validationTextarea"></textarea>
-      <br>
-      <button type="submit" class="btn btn-success" name="Send">Envoyer</button>
-  </form>
-</div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        
-</body>
-</html>
+<?php
+require 'footer.php';
+?>

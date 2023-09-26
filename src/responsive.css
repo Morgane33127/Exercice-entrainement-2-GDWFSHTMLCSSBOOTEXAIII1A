@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* Police */
+@font-face {
+  font-family: "HammersmithOne-Regular";
+  src: url("HammersmithOne-Regular.ttf") format("truetype");
+}
+/* Réinitialisation du navigateur */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ID */
+#body {
+  background-color: #FFFDF7;
+  font-family: "HammersmithOne-Regular";
+}
+
+#footer {
+  background-color: #FFCC29;
+  padding-bottom: 1%;
+}
+
+/* Classes*/
+.navigation {
+  background-color: #424137;
+  color: white;
+}
+
+.label {
+  padding-top: 1%;
+}
+
+.logo-style {
+  border-radius: 100%;
+  border: solid;
+  border-color: #424137;
+}
+
+.card-style {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.card-event-style {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.menu {
+  color: white !important;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: white;
+}
+
+/* Styles pour les écrans mobiles */
+@media screen and (max-width: 768px) {
+  .card-style {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card-mobile {
+    width: 150px;
+    font-size: 12px;
+  }
+  .mode-invisible {
+    display: none;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .about {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+/* Styles pour les écrans de tablettes */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .card-style {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  .about {
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+/* Styles pour les écrans d'ordinateurs de bureau */
+@media screen and (min-width: 1025px) {
+  .card-style {
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .about {
+    padding-right: 200px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    margin-right: 50px;
+  }
+}/*# sourceMappingURL=responsive.css.map */
