@@ -1,7 +1,10 @@
 <?php
+
 require 'header.php';
 require 'navigation.php';
+
 ?>
+
 <div class="container-fluid about margin-top">
     <div class="row align-middle">
       <div class="col about">
@@ -25,7 +28,7 @@ require 'navigation.php';
         <img src="src/img/laruche-logo.png" class="logo-style" alt="La Ruche association logo" style="width:50%;">
       </div>
       <div class="col about">
-        <p>C'est de se constat alarmant qu'est née <b>La Ruche</b> une association de protection des abeilles et de la
+        <p>C'est de ce constat alarmant qu'est née <b>La Ruche</b> une association de protection des abeilles et de la
         biodiversité. <br> Notre mission : participer à la sauvegarde
           des abeilles et au développement des colonies.</p>
         <p>Pour cela nous participons au développement des colonies en veillant sur un parc de ruches et en creant des
@@ -35,6 +38,9 @@ require 'navigation.php';
       </div>
     </div>
   </div>
-<?php
+
+  <?php
+
 require 'footer.php';
+
 ?>
